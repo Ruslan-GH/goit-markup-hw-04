@@ -156,16 +156,24 @@ body {
 .tel-link:focus {
   color: var(--focus-color);
 }
+
 /*========== END Header ==========*/
 
 /* Main */
 
 /*========== Hero ========== */
 .hero {
-  background: #2f303a;
+  background: #c4c4c4;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -199,6 +207,10 @@ body {
 /*========== END Hero ========== */
 
 /*========== FEATURES ========== */
+.features {
+  padding-top: 94px;  
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -246,12 +258,31 @@ body {
   margin-top: 30px;
 }
 
+.box {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.box-icon {
+  width: 70px;
+  height: 70px; 
+}
+
+}
+
 /*========== END FEATURES ========== */
 
 /*========== WORK ========== */
 .work {
-  padding-top: 0;
+  padding-top: 94px;
 }
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -310,6 +341,7 @@ body {
 
 .team-name-description {
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-list-card {
@@ -320,9 +352,81 @@ body {
 }
 
 .team-list-content {
-  padding: 30px 0;
+  padding: 30px 32px;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--focus-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
 }
 /*========== END TEAM ========== */
+
+/*========== CLIENTS ========== */
+.client-list-icon {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.client-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: var(--focus-color);
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: var(--focus-color);
+}
+
+
+/*========== END CLIENTS ========== */
+
+
+
 
 /*========== FOOTER ========== */
 .footer {
